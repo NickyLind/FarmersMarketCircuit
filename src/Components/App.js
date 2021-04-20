@@ -7,8 +7,10 @@ import './../styles/App.css';
 function App() {
   return (
     <React.Fragment>
-      <div class="box">
+      <div class="header">
         <Header />
+      </div>
+      <div class="content">
         <MarketControl />
       </div>
     </React.Fragment>

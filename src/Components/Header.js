@@ -5,7 +5,7 @@ function Header() {
   return (
     <React.Fragment>
       <h1>Avery's Organics</h1>
-      <p>Buy your local fruits and vegetables here!</p>
+      <p>Support the local agriculture and healthy communities!</p>
     </React.Fragment>
   );
 }

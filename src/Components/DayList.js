@@ -43,7 +43,6 @@ const marketSchedule = [
 function DayList() {
   return (
     <React.Fragment>
-      <hr />
       {marketSchedule.map((day, index) =>
         <Day day={day.day}
           location={day.location}

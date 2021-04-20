@@ -5,10 +5,10 @@ function Month(props) {
   return (
     <React.Fragment>
       <h3>{props.month}</h3>
-      <p><strong>Produce:</strong>
-        {props.selection.map((element) =>
-          <li>{element}</li>
-        )}</p>
+      <p><strong>Produce:</strong></p>
+      {props.selection.map((element) =>
+        <p>{element}</p>
+      )}
       <hr />
     </React.Fragment>
   );
