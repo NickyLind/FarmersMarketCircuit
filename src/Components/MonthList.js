@@ -274,7 +274,6 @@ const availableProduce = [
 function MonthList() {
   return (
     <React.Fragment>
-      <hr />
       {availableProduce.map((month, index) =>
         <MonthControl
           month={month.month}
