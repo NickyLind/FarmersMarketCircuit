@@ -1,5 +1,6 @@
 import React from 'react';
-import Month from "./Month";
+import MonthControl from "./MonthControl";
+// import MonthSelection from "./MonthSelection"
 
 const availableProduce = [
   {
@@ -275,7 +276,7 @@ function MonthList() {
     <React.Fragment>
       <hr />
       {availableProduce.map((month, index) =>
-        <Month
+        <MonthControl
           month={month.month}
           selection={month.selection}
           key={index}

@@ -1,15 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
+import MonthSelection from "./MonthSelection"
 
 function Month(props) {
   return (
     <React.Fragment>
-      <h3>{props.month}</h3>
-      <p><strong>Produce:</strong></p>
-      {props.selection.map((element) =>
-        <p>{element}</p>
-      )}
-      <hr />
+      <div class="day">
+        <h2><a href="#">{props.month}</a></h2>
+        <p><strong>Produce:</strong></p>
+        {props.selection.map((element) =>
+          <p>{element}</p>
+        )}
+      </div>
     </React.Fragment>
   );
 }
