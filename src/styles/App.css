@@ -43,9 +43,11 @@ button:hover{
   color: rgb(4, 68, 4);
 } */
 
-a {
+.click {
   color: rgb(4, 68, 4);
+  text-decoration: underline;
 }
-a:hover {
+.click:hover {
   color: rgb(172, 230, 118);
+  cursor: pointer;
 }

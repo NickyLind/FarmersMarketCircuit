@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import MonthSelection from './MonthSelection'
 
 class Month extends React.Component {
 
@@ -17,50 +18,22 @@ class Month extends React.Component {
   }
 
   render() {
+    let currentlyVisibleState = null;
     if (this.state.produceVisible) {
-      return (
-        <React.Fragment>
-          <p><strong>Produce:</strong></p>
-          {this.props.selection.map((element) =>
-            <p>{element}</p>)}
-        </React.Fragment>
-      )
+      currentlyVisibleState = <MonthSelection
+        selection={this.props.selection}
+      />
     }
+
     return (
       <React.Fragment>
         <div class="day">
-          <h2><a href="#" onClick={this.handleClick}>{this.props.month}</a></h2>
-
+          <h2><span class="click" onClick={this.handleClick}>{this.props.month}</span></h2>
+          {currentlyVisibleState}
         </div>
       </React.Fragment>
     )
-
-
-
-
   }
-
-  // function Month(props) {
-  //   return (
-  //     <React.Fragment>
-  //       <div class="day">
-  //         <h2><a href="#">{props.month}</a></h2>
-
-  //         <ProduceControl
-  //           selection={props.selection}
-  //           key={props.index}
-  //         />
-
-  //         <p><strong>Produce:</strong></p>
-  //         {props.selection.map((element) =>
-  //           <p>{element}</p>
-  //         )}
-  //       </div>
-  //     </React.Fragment>
-  //   );
-  // }
-
-
 }
 
 export default Month;
