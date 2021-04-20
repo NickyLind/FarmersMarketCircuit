@@ -1,5 +1,5 @@
 import React from "react";
-import Day from "./Day";
+import DayControl from "./DayControl";
 
 const marketSchedule = [
   {
@@ -44,7 +44,7 @@ function DayList() {
   return (
     <React.Fragment>
       {marketSchedule.map((day, index) =>
-        <Day day={day.day}
+        <DayControl day={day.day}
           location={day.location}
           hours={day.hours}
           booth={day.booth}
